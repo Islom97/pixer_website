@@ -21,11 +21,11 @@
                 <li class="dropdawn">
                     <a class="links" href="#xizmat">Xizmatlar</a>
                     <ul class="dropdawn__menu">
-                        <li><a href="#">Vebsayt</a></li>
-                        <li><a href="#">Telegram bot</a></li>
-                        <li><a href="#">SMM</a></li>
-                        <li><a href="#">Grafik dizayn</a></li>
-                        <li><a href="#">CRM tizim</a></li>
+                        <li><a href="#sayt">Vebsayt</a></li>
+                        <li><a href="#bot">Telegram bot</a></li>
+                        <li><a href="#smm">SMM</a></li>
+                        <li><a href="#grafik">Grafik dizayn</a></li>
+                        <li><a href="#crm">CRM tizim</a></li>
                     </ul>
 
                 </li>
@@ -48,8 +48,8 @@
     </section>
 
     <section class="about">
-        <div class="container box">
-            <ul class="sayt-tuzish">
+        <div class="container box" id="sayt">
+            <ul class="sayt-tuzish" >
                 <li><h2>Sayt tuzish</h2></li>
                 <li class="sayt-tuzish__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis</p></li>
                 <li>
@@ -63,12 +63,145 @@
                 </li>
             </ul>
             <div class="link__sayt">
-                <a href="#">Buyurtma berish</a>
-                <a href="#">Batafsil ma’lumot</a>
+                <a class="buyurtma"  href="#buyurtma">Buyurtma berish</a>
+                <a class="batafsil" href="#">Batafsil ma’lumot</a>
+            </div>
+        </div>
+
+        <div class="container box" id="bot">
+            <ul class="tg-bot">
+                <li><h2>Telegram bot tuzish</h2></li>
+                <li class="tg-bot__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis</p></li>
+                <li>
+                    <ul class=" tg-bot__haqida">
+                        <li>kontakt bot</li>
+                        <li>ballar yig’ish</li>
+                        <li>yetkazib berish</li>
+                        <li>Telegram oldi-sotdi</li>
+                        <li>ovoz bilan ishlash</li>
+                        <li>maxsus</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="link__sayt">
+                <a class="buyurtma" href="#buyurtma">Buyurtma berish</a>
+                <a class="batafsil" href="#">Batafsil ma’lumot</a>
+            </div>
+        </div>
+
+        <div class="container box" id="smm">
+            <ul class="smm">
+                <li><h2>SMM</h2></li>
+                <li class="smm__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis</p></li>
+                <li>
+                    <ul class="smm__haqida">
+                        <li >Facebook</li>
+                        <li>Instagram</li>
+                        <li>TikTok</li>
+                        <li>reklamalarni sozlash</li>
+                        <li>aksiyalar uyushtirish</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="link__sayt">
+                <a class="buyurtma" href="#buyurtma">Buyurtma berish</a>
+                <a class="batafsil" href="#">Batafsil ma’lumot</a>
+            </div>
+        </div>
+
+        <div class="container box" id="grafik">
+            <ul class="grafik">
+                <li><h2>Grafik dizayn</h2></li>
+                <li class="grafik__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis</p></li>
+                <li>
+                    <ul class="grafik__haqida">
+                        <li >logotip</li>
+                        <li>korporativ stil</li>
+                        <li>brending</li>
+                        <li>ijtimoiy tarmoq sahifalari uchun posterlar</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="link__sayt">
+                <a class="buyurtma" href="#buyurtma">Buyurtma berish</a>
+                <a class="batafsil" href="#">Batafsil ma’lumot</a>
+            </div>
+        </div>
+        <div class="container box" id="crm">
+            <ul class="crm">
+                <li><h2>CRM tizimlar</h2></li>
+                <li class="crm__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis</p></li>
+                <li>
+                    <ul class="crm__haqida">
+                        <li >do’konlar va omborlar</li>
+                        <li>oshxona, kafe va restoranlar</li>
+                        <li>shaxsiy hisob-kitoblar</li>
+                        <li>maxsus</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="link__sayt">
+                <a class="buyurtma" href="#buyurtma">Buyurtma berish</a>
+                <a class="batafsil" href="#">Batafsil ma’lumot</a>
             </div>
         </div>
     </section>
+
+    <section class="form" id="buyurtma">
+        <div class="form__text">
+            <h2>Buyurtma berish</h2>
+            <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+        </div>
+        <form class="form__intro" action="https://echo.htmlacademy.ru/" method="POST">
+            <input class="info-name" type="text" name="name" placeholder="Ismingiz" required>
+            <input class="info-name" type="number" name="number" placeholder="Telefon raqamingiz" required>
+            <select name="Xizmat turi" class="info-name" required>
+                <option value="" disabled selected>Xizmat turi</option>
+                <option value="vebsayt">vebsayt</option>
+                <option value="telegram-bot">telegram bot</option>
+                <option value="smm">SMM</option>
+                <option value="veb dizayn">veb dizay</option>
+                <option value="CRM-tizimlari"> CRM tizimlari</option>
+            </select>
+            <button type="submit">Buyurtma berish</button>
+        </form>
+    </section>
+
 </main>
+
+<footer>
+    <div class="container footer">
+        <ul class="copyrigh">
+            <li>
+                <h3>Copyright 2020</h3>
+            </li>
+            <li>
+                <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.</p>
+            </li>
+        </ul>
+
+        <ul class="sahifalar">
+            <li>
+                <h3>Sayt sahifalari</h3>
+            </li>
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Xizmatlar</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Jamoa</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Kontaktlar</a></li>
+        </ul>
+        <ul class="biz">
+            <li>
+                <h3>Biz internetda</h3>
+            </li>
+            <li><a class="telegram" href="https://telegram.org/" target="_blank">Telegram</a></li>
+            <li><a class="facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a class="instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+
  
 </body>
 </html>
