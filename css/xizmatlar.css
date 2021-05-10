@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+a{
+    display: inline-block;
+}
+ul{
+    list-style-type: none;
+}
+
+/* SECTION NAVIGATION */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo:hover{
+    opacity: .8;
+}
+.logo:active{
+    opacity: .6;
+}
+.nav_warapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style-type: none;
+    
+}
+.links{
+    text-decoration: none;
+    padding: 16px;
+    font-size: 15px;
+    color: #000;
+}
+.links:hover{
+    padding-bottom: 13px;
+    border-bottom: 3px solid #000;
+}
+.links:active{
+    color:#fff;
+    background-color: #191919;
+    opacity: .7;
+}
+
+.dropdawn{
+    position: relative;
+}
+.dropdawn:hover .dropdawn__menu{
+    display: block;
+}
+.dropdawn__menu{
+    display: none;
+    position: absolute;
+    width: 124px;
+    top: 57px;
+    left: -15px;
+    padding-top: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.dropdawn__menu a{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdawn__menu a:hover{
+    background-color: #00BAFC;
+    color: #fff;
+}
+.dropdawn__menu a:active{
+    opacity: .6;
+}
+.number{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 24px;
+    background-color: #00BAFC;
+    border-radius: 5px;
+    -webkit-transition: .5s ease all;
+    -o-transition: .5s ease all;
+    transition: .5s ease all;
+}
+.number a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 13px;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.number a:hover{
+    color: #00BAFC;
+}
+.number a:active{
+    color: #fff;
+    
+}
+.number:hover{
+    background-color: #fff;
+    color: #00BAFC;
+    border: 3px solid #00BAFC;
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.number:active{
+    background-color: #00BAFC;
+    opacity: 0.6;
+}
+
+
+.headline h1{
+    font-size: 40px;
+    line-height: 130%;
+    margin-top: 128px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.headline p{
+    font-size: 16px;
+    line-height: 24px;
+    width: 800px;
+    height: 72px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+
+.about{
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #F4F4F4;
+}
+.box{
+    position: relative;
+    width: 804px;
+    background-color: #fff;
+    margin-top: 80px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    
+}
+.sayt-tuzish::before{
+    content: url(../img/website-illustration.svg);
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+.sayt-tuzish h2{
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 16px;
+}
+.sayt-tuzish__text{
+    width: 500px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.sayt-tuzish__haqida li{
+    margin-bottom: 8px;
+    line-height: 24px;
+}
+.sayt-tuzish__haqida li::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    margin-top: 3px;
+    background: #00BAFC;
+    border-radius: 12px;
+}
